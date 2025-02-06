@@ -144,7 +144,7 @@ Electron的预加载脚本.
 整个项目围绕Electron和ECDICT开发，阅读以上文本后，就可以自由的在源代码上进行修改和添加. 
 #### API参考
 ##### StarDict 类
-见`./scripts/StarDict.md`或项目Wiki. 
+见`./scripts/StarDict.md`或[项目Wiki](https://github.com/kiko-rin/KeyBulary/wiki/API%E5%8F%82%E8%80%83#stardict-%E7%B1%BB). 
 #### 打包
 完成您的代码后，您可在`package.json`修改打包设置，然后在终端`cnpm run build`，即可获取打包后文件. 
 ## 使用的开源项目
