@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4e9d9; /* 使用低饱和度的暖色调作为背景 */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #fddcc4; /* 更暖的低饱和颜色 */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #wordInput {
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #fff7f0; /* 浅色背景，保持整体风格一致 */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #ffeeda; /* 卡片背景颜色 */
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: larger;
+  }
+  
+  h2 {
+    color: #5a4a39; /* 深一些的颜色用于标题，增加对比度 */
+  }
+  
+  p {
+    color: #7b6853; /* 较深的颜色，确保文字清晰易读 */
+  }
+
+  .card-font {
+    font-size: x-large;
+  }
+
+  .card-head {
+    font-size: large;
+    font-weight: 600;
+  }
+.footer {
+  color: #d6a66f;
+}
+a:link { color: #d6a66f; } /* 未访问的链接 */
+a:visited { color: #d6a66f; } /* 已访问的链接 */
+a:hover { color: #b78956; } /* 鼠标悬停时的链接 */
+a:active { color: #d6a66f; } /* 激活状态的链接 */
+ 
