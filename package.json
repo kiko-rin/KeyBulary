@@ -1,0 +1,44 @@
+{
+  "name": "keybulary",
+  "version": "0.1.0",
+  "description": "A light En2CN Dictionary",
+  "main": "main.js",
+  "scripts": {
+    "test": "make test",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "KeyBulary"
+  ],
+  "build": {
+    "win": {
+      "icon": "./icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "author": "kikorin",
+  "license": "AGPL^v3",
+  "devDependencies": {
+    "electron": "^34.0.1",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "natural": "^8.0.1",
+    "path-key": "^4.0.0",
+    "sqlite3": "^5.1.7",
+    "string-similarity": "^4.0.4"
+  }
+}
