@@ -141,7 +141,12 @@ Electron的预加载脚本.
 #### `./styles/`
 该文件夹用于存储html页面的css样式表. 
 ### 开发指南
-整个项目围绕Electron和ECDICT开发，阅读以上文本后，就可以自由的在源代码上进行修改和添加. 
+整个项目围绕Electron和ECDICT开发，阅读以上文本后，就可以自由的在源代码上进行修改和添加.
+#### 测试
+在项目文件夹打开终端并运行：
+```
+cnpm start
+```
 #### API参考
 ##### StarDict 类
 见`./scripts/StarDict.md`或[项目Wiki](https://github.com/kiko-rin/KeyBulary/wiki/API%E5%8F%82%E8%80%83#stardict-%E7%B1%BB). 
