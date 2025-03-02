@@ -1,13 +1,14 @@
 # KeyBulary
-v0.1.0-alpha.1
+v0.1.0-alpha.2
 一个轻量的Electron词典
+更新于2025-3-1
 ## 简介
 你好！
 
 这是一个桌面端的英语->汉语词典，借助GitHub开源项目[ECDICT](https://github.com/skywind3000/ECDICT)词典和Electron架构开发，词典根据各类考试大纲和语料库词频收录数十万条各类单词的英文和中文释义[^1]. 
 [^1]: 见[ECDICT: README](https://github.com/skywind3000/ECDICT)
 
-因为市面上的词典软件很多都功能臃肿，会员价格昂贵，所以有了自己开发一个词典的想法，好巧不巧接触了Node.js和Electron（你没看错，就是刚接触，都是现学的😓），于是花了几天写了KeyBulary（技术不够，起名来凑😅），目前还处在非常简陋的状态，仅限于可以使用，称不上好用，技术力有限，见谅. 
+因为市面上的词典软件很多都功能臃肿，会员价格昂贵，所以有了自己开发一个词典的想法，于是花了几天写了KeyBulary，目前还处在非常简陋的状态，仅限于可以使用，称不上好用，技术力有限，见谅. 
 
 红豆泥私密马赛！
 
@@ -52,7 +53,7 @@ v0.1.0-alpha.1
 │      index.js
 │      preload.js
 │      StarDict.js
-│	   StarDict.md
+│      StarDict.md
 │      
 └─styles
         index.css
@@ -94,7 +95,7 @@ v0.1.0-alpha.1
 | 1    | Lemma 的变换形式，比如 s 代表 apples 是其 lemma 的复数形式 |
 [^4]: 见[ECDICT: README](https://github.com/skywind3000/ECDICT)
 #### `main.js`
-主进程和窗口管理器，默认打开一个`800*600`的窗口并加载`index.html`. 
+主进程和窗口管理器，默认打开一个`1200*800`的窗口并加载`index.html`. 
 #### `index.html`
 词典的主页面，挂载`./scripts/index.js`和`./styles/index.css`. 
 #### `./ECDICT/`
@@ -162,14 +163,14 @@ cnpm start
 ## To Do
 - 完善单词所有条目
 - 优化搜索体验
-- 添加Boom功能（暂不剧透）
+- 预计从0.2.0版本开始向Dart迁移
 ## 实验性计划
-- 移植至Dart架构（~~又要从零打造~~）
+- 移植至Dart架构
 ## 发版说明
 - Release：稳定版，提供源代码和可执行文件.
 - Beta：测试版（公测），提供源代码和可执行文件，不保证运行稳定性. 
 - Alpha：可运行的开发版，仅提供源代码，不保证运行稳定性.
-- Dev：可运行性未知的开发版，仅提供源代码. 
+- Dev：含开发工具的开发版，仅提供源代码. 
 
 ## <span id='announcement'>声明</span>
 若您基于本项目进行二次开发，即代表您遵守以下内容：
