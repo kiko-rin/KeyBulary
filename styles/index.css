@@ -1,65 +1,115 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4e9d9; /* 使用低饱和度的暖色调作为背景 */
+/* styles/index.css */
+:root {
+    --md-color-primary-light: #ffffff; /* 使用浅橙色作为主色调 */
+    --md-color-on-primary-light: #000000; /* 主色调上的文字颜色 */
+    --md-color-background-light: #fffbf3; /* 背景色 */
+    --md-color-surface-light: #fdf1e5; /* 表面颜色 */
+    --md-color-shadow-light: rgba(96, 78, 53, 0.2); /* 阴影颜色 */
+  }
+  
+  body {
+    background-color: var(--md-color-background-light);
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
   }
   
   header {
-    background-color: #fddcc4; /* 更暖的低饱和颜色 */
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    position: relative;
+    z-index: 1;
   }
   
   .header-container {
+    height: 70%;
+    padding: 20px;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-color: var(--md-color-surface-light);
+    border-bottom: 1px solid #E0E0E0;
   }
   
   #wordInput {
+    border-radius: 10px; /* 圆角 */
     border: none;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #fff7f0; /* 浅色背景，保持整体风格一致 */
+    padding: 10px 16px;
+    font-size: 16px;
+    color: var(--md-color-on-primary-light);
+    background-color: var(--md-color-primary-light);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #wordInput:focus {
+    outline: none;
+    background-color: darken(var(--md-color-primary-light), 10%);
   }
   
   main {
+    flex-grow: 1;
     padding: 20px;
+    display: flex;
+    gap: 20px;
+    overflow-y: auto;
   }
   
-  .card {
-    background-color: #ffeeda; /* 卡片背景颜色 */
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-size: larger;
-  }
-  
-  h2 {
-    color: #5a4a39; /* 深一些的颜色用于标题，增加对比度 */
-  }
-  
-  p {
-    color: #7b6853; /* 较深的颜色，确保文字清晰易读 */
+  .maincont {
+    display: flex;
   }
 
-  .card-font {
-    font-size: x-large;
+  #contentdiv {
+    width: 100%; /* 占据剩余空间的70% */
+    margin-left: auto; /* 卡片居右 */
+  }
+
+  .card {
+    background-color: var(--md-color-surface-light);
+    border-radius: 16px;
+    box-shadow: 0 4px 8px var(--md-color-shadow-light);
+    padding: 20px;
+    white-space: pre-line;
+    word-wrap: break-word;
+    font-size: larger;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  #worddiv {
+    width: 40%; /* 占据剩余空间的15% */
+    max-width: 400px;
+    margin-right: auto; /* 卡片居左 */
+    margin-top: 5%;
+  }
+
+  .query-card {
+    background-color: var(--md-color-surface-light);
+    border-radius: 16px;
+    box-shadow: 0 4px 8px var(--md-color-shadow-light);
+    padding: 20px;
+    white-space: pre-line;
+    word-wrap: break-word;
+    font-size: larger;
+    margin-left: 5%;
+    margin-right: 5%;
+    backdrop-filter: blur(10px);
   }
 
   .card-head {
-    font-size: large;
-    font-weight: 600;
+    font-size: medium;
   }
-.footer {
-  color: #d6a66f;
-}
-a:link { color: #d6a66f; } /* 未访问的链接 */
-a:visited { color: #d6a66f; } /* 已访问的链接 */
-a:hover { color: #b78956; } /* 鼠标悬停时的链接 */
-a:active { color: #d6a66f; } /* 激活状态的链接 */
- 
+
+  .card-font {
+    font-size: larger;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--md-color-surface-light);
+    border-top: 1px solid #E0E0E0;
+  }
+  
